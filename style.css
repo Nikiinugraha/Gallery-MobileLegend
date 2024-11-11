@@ -1,0 +1,353 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(71, 78, 124);
+  overflow-x: hidden;
+}
+
+nav {
+  z-index: 1;
+  display: flex;
+  background-color: rgb(41, 46, 82);
+  align-items: center;
+  gap: 250px;
+  padding: 10px 20px;
+  height: 80px;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+}
+
+nav img {
+  width: 150px;
+}
+
+.title h1 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.container {
+  position: relative;
+  flex-direction: column;
+}
+
+.bg-roam {
+  display: flex;
+}
+.bg-roam img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper-khufra,
+.wrapper-tigreal {
+  position: relative;
+  display: flex;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-kadita {
+  position: relative;
+  display: flex;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-khufra .khufra-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.wrapper-mino {
+  background-image: url("asset/img/mino-bg.jpg");
+  position: relative;
+  display: flex;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-tigreal .tigreal-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.wrapper-kadita .kadita-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.wrapper-franco {
+  background-image: url("asset/img/franco-bg.jpg");
+  position: relative;
+  display: flex;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-natalia{
+  background-image: url("asset/img/natalia-bg.jpg");
+  position: relative;
+  display: flex;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-khufra:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(to top, rgba(1, 1, 1, 0.775), rgba(0, 0, 0, 0));
+}
+.wrapper-mino:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(to top, rgb(1, 1, 1, 0.775), rgba(0, 0, 0, 0));
+}
+.wrapper-tigreal:before,
+.wrapper-kadita:before,
+.wrapper-franco:before, .wrapper-natalia:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgb(1, 1, 1, 0.775), rgba(0, 0, 0, 0));
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  border: 2px solid white;
+  position: relative;
+  box-shadow: 5px 5px 15px rgba(255, 217, 0, 0.593);
+  margin: 2rem;
+  width: 350px;
+  height: 370px;
+  border-radius: 10px;
+  transform: translateX(-400%);
+  transition: transform 0.4s ease;
+  overflow: hidden;
+}
+
+.box .img-box {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.25s ease;
+}
+.box:hover .img-box {
+  transform: scale(1.05);
+}
+
+.box .caption {
+  padding: 10px;
+  width: 100%;
+  font-family: "roboto", sans-serif;
+  position: absolute;
+  bottom: 8%;
+  -webkit-text-stroke: 1px solid;
+}
+.box .caption:before {
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0));
+}
+.box .caption h1 {
+  color: rgb(247, 235, 0);
+  position: relative;
+}
+.box .caption b {
+  color: #fff;
+}
+
+.box .caption p {
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+
+.box .buttonSound {
+  position: absolute;
+  height: 35px;
+  right: 0;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  transition: 200ms ease;
+}
+
+.buttonSound .soundIcon {
+  height: 100%;
+}
+
+.box .buttonSound:hover {
+  cursor: pointer;
+  height: 37px;
+}
+
+.popup {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  width: 60%;
+  height: 420px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, rgb(41, 47, 95), rgb(69, 76, 131));
+  transition: 100ms ease-in;
+}
+.popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.popup-open {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  transition: 0.25s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.popup-open:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.button-close {
+  position: absolute;
+  border-radius: 50px;
+  background-color: rgb(41, 47, 95);
+  right: 0%;
+  margin: 5px 5px;
+  border: none;
+  box-shadow: 0 0 10px 0 black;
+  transition: 0.25s ease;
+}
+
+.button-close i {
+  font-size: 3rem;
+  color: #abcdfeff;
+}
+.button-close:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.542);
+}
+.button-close i:hover {
+  color: rgba(249, 28, 28, 0.903);
+}
+.popup .img-popup-konten img {
+  border-radius: 10px;
+  width: 250px;
+  height: 100%;
+}
+.popup .header-popup {
+  display: flex;
+  width: 50%;
+  left: 33%;
+  margin: 5px 10px;
+  position: absolute;
+  color: #abcdfeff;
+  font-family: "roboto";
+  letter-spacing: 1.5px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.227);
+}
+.popup .header-popup img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+.popup .role {
+  position: absolute;
+  left: 34%;
+  top: 15%;
+  font-size: 1.1rem;
+  color: rgba(186, 215, 255, 0.709);
+}
+.popup .skill-img {
+  position: absolute;
+  top: 25%;
+  left: 33%;
+  width: 61%;
+  margin: 12px 0;
+  height: 50%;
+}
+.popup .skill-img img {
+  width: 70px;
+  height: 70px;
+  margin: 15px;
+}
+.pasif-khufra,
+.pasif-mino,
+.pasif-tigreal,
+.pasif-kadita,
+.pasif-franco {
+  border-radius: 50px;
+  border: 4px solid rgba(253, 234, 124, 0.919);
+}
+.header-attribute {
+  font-family: "roboto";
+  width: 60%;
+  position: absolute;
+  top: 52%;
+  left: 34%;
+  color: rgba(186, 215, 255, 0.709);
+  font-size: 1.3rem;
+  padding: 3px 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.227);
+}
+.description-attribute {
+  position: absolute;
+  top: 62%;
+  left: 34%;
+  color: rgba(186, 215, 255, 0.709);
+  font-family: "Times New Roman", Times, serif;
+}

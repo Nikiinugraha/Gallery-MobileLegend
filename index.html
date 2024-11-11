@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GALLERY HEROES MOBILE LEGEND</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="logo">
+        <img src="asset/img/logo_ml.png" alt="logo_ml" />
+      </div>
+      <div class="title">
+        <h1>MOBILE LEGEND FAVORITE ROAM HEROES</h1>
+      </div>
+    </nav>
+
+    <!-- CONTAINER -->
+    <div class="container">
+
+      <div class="bg-roam">
+        <img src="asset/img/roam_bg.jpg" />
+      </div>
+
+      <!-- CONTENT BOX 1 -->
+      <div class="wrapper-khufra">
+        <video autoplay muted loop class="khufra-background">
+          <source src="asset/video/khufra.mp4" type="video/mp4" />
+        </video>
+        <div class="box">
+          <img class="img-box" src="asset/img/khufra.jpg" alt="khufra" />
+          <button class="buttonSound">
+            <img src="asset/img/mute.png" class="soundIcon" />
+            <audio src="asset/sound/khufra.mp3"></audio>
+          </button>
+          <div class="caption">
+            <h1>Khufra</h1>
+            <p>
+              Skill 1-nya, <b>Tyrant's Revenge</b>, melompat ke arah musuh dan memberikan efek knock-up. Skill 2, <b>Bouncing Ball</b>, membuatnya menjadi bola yang menghentikan musuh dengan dash/blink. Ultimate-nya, <b>Tyrant's Rage</b>,
+              menarik musuh ke tembok, memberikan stun dan damage.
+            </p>
+          </div>
+          <button class="popup-open" onclick="popupOpen('popup1')">
+            <p>Selengkapnya</p>
+          </button>
+        </div>
+        <div class="popup" id="popup1">
+          <button class="button-close" onclick="popupClose('popup1')">
+            <i class="ph ph-x-circle"></i>
+          </button>
+          <div class="img-popup-konten">
+            <img src="asset/img/khufra.jpg" alt="khufra-popup" />
+          </div>
+          <div class="header-popup">
+            <h1>Khufra</h1>
+            <img src="asset/img/logo-tank.png" alt="logo tank" />
+          </div>
+          <div class="role">
+            <p>Tank</p>
+            <p>Crowd Control</p>
+          </div>
+          <div class="skill-img">
+            <img src="asset/img/pasif-khufra.png" alt="pasif khufra" class="pasif-khufra" />
+            <img src="asset/img/skill1_khufra.png" alt="skill 1 khufra" />
+            <img src="asset/img/skill2-khufra.png" alt="skill 2 khufra" />
+            <img src="asset/img/ulti-khufra.png" alt="ultimate khufra" />
+          </div>
+          <div class="attribute">
+            <div class="header-attribute">
+              <p>Spell Curse</p>
+            </div>
+            <div class="description-attribute">
+              <p>
+                Khufra mengaktifkan Kutukan Sihir yang ditinggalkan oleh Esmeralda setiap 12 detik, meningkatkan Basic Attack berikutnya. Basic Attack yang ditingkatkan memperoleh jangkauan serangan tambahan dan memberikan
+                <span style="color: rgb(127, 98, 254)">Magic Damage</span> setara dengan <span style="color: gold">(+120% Total Physical Attack)</span> + 6% Max HP target. Khufra juga menyebabkan 30% Slow selama 1.5 detik 1.22% Ban Rate dan
+                memulihkan 8% Max HP ketika Basic Attack-nya mengenai target. Setiap kali Khufra menyebabkan efek Crowd Control ke Hero lawan dengan Skill-nya, Cooldown Spell Curse berkurang selama 4 detik.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper-mino">
+        <div class="box">
+          <img class="img-box" src="asset/img/mino.jpg" alt="minotour" />
+          <button class="buttonSound">
+            <img src="asset/img/mute.png" class="soundIcon" />
+            <audio id="mino-sound" src="asset/sound/mino.mp3"></audio>
+          </button>
+          <div class="caption">
+            <h1>Minotour</h1>
+            <p>
+              Skill 1, <b>Despair Hammer</b>, membuatnya melompat dan memperlambat musuh. Skill 2, <b>Motivation Roar</b>, menyembuhkan dirinya dan sekutu di sekitarnya, Ultimate-nya, <b>Minoan Fury</b>, menghantam tanah beberapa kali,
+              memberikan damage dan efek knock-up
+            </p>
+          </div>
+          <button class="popup-open" onclick="popupOpen('popup2')">
+            <p>Selengkapnya</p>
+          </button>
+        </div>
+        <div class="popup" id="popup2">
+          <button class="button-close" onclick="popupClose('popup2')">
+            <i class="ph ph-x-circle"></i>
+          </button>
+          <div class="img-popup-konten">
+            <img src="asset/img/mino.jpg" alt="mino-popup" />
+          </div>
+          <div class="header-popup">
+            <h1>Minotour</h1>
+            <img src="asset/img/logo-tank.png" alt="logo tank" />
+            <img src="asset/img/support.png" alt="logo support" />
+          </div>
+          <div class="role">
+            <p>Tank/Support</p>
+            <p>Crowd Control & Heal</p>
+          </div>
+          <div class="skill-img">
+            <img src="asset/img/pasif-mino.png" alt="pasif mino" class="pasif-mino" />
+            <img src="asset/img/skill1-mino.png" alt="skill 1 mino" />
+            <img src="asset/img/skill2-mino.png" alt="skill 2 mino" />
+            <img src="asset/img/ultimate-mino.png" alt="ultimate mino" />
+          </div>
+          <div class="attribute">
+            <div class="header-attribute">
+              <p>Rage Mode</p>
+            </div>
+            <div class="description-attribute">
+              <p>
+                Ketika Minotaur menyebabkan Crowd Control ke Hero lawan dengan Skill, dia juga akan mengurangi 5 (+0.5 * Level Hero) Hybrid Defense mereka. Ketika Minotaur memulihkan HP Hero rekan dengan Skill, dia akan meningkatkan 5
+                (+0.5*Level Hero) Hybrid Defense mereka selama 2 detik. Efek ini menjadi dua kali lipat di mode Enraged.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper-tigreal">
+        <video autoplay muted loop class="tigreal-background">
+          <source src="asset/video/tigreal-bg.mp4" />
+        </video>
+        <div class="box" id="box3">
+          <img class="img-box" src="asset/img/tigreal.jpg" alt="tigreal" />
+          <button class="buttonSound">
+            <img src="asset/img/mute.png" class="soundIcon" />
+            <audio id="tigreal-sound" src="asset/sound/tigreal.mp3"></audio>
+          </button>
+          <div class="caption">
+            <h1>Tigreal</h1>
+            <p>
+              Skill 1, <b>Attack Wave</b>, melepaskan gelombang energi yang memberikan damage dan memperlambat musuh. Skill 2, <b>Sacred Hammer</b>, mendorong musuh ke arah tertentu, memberikan stun jika terkena dua kali. Ultimate-nya,
+              <b>Implosion</b>, menarik semua musuh di sekitarnya ke arahnya dan memberikan efek stun serta damage area yang besar, membuatnya sangat efektif dalam teamfight.
+            </p>
+          </div>
+          <button class="popup-open" onclick="popupOpen('popup3')">
+            <p>Selengkapya</p>
+          </button>
+          </div>
+        <div class="popup" id="popup3">
+          <button class="button-close" onclick="popupClose('popup3')">
+            <i class="ph ph-x-circle"></i>
+          </button>
+          <div class="img-popup-konten">
+            <img src="asset/img/tigreal.jpg" alt="tigreal-popup" />
+          </div>
+          <div class="header-popup">
+            <h1>Tigreal</h1>
+            <img src="asset/img/logo-tank.png" alt="logo tank" />
+          </div>
+          <div class="role">
+            <p>Tank</p>
+            <p>Crowd Control</p>
+          </div>
+          <div class="skill-img">
+            <img src="asset/img/pasif-tigreal.png" alt="pasif tigreal" class="pasif-tigreal" />
+            <img src="asset/img/skill1-tigreal.png" alt="skill 1 tigreal" />
+            <img src="asset/img/skill2-tigreal.png" alt="skill 2 tigreal" />
+            <img src="asset/img/ultimate-tigreal.png" alt="ultimate tigreal" />
+          </div>
+          <div class="attribute">
+            <div class="header-attribute">
+              <p>Fearless</p>
+            </div>
+            <div class="description-attribute">
+              <p>
+                Tigreal memperoleh 1 Stack Fearless setiap kali menggunakan Skill atau terkena Basic Attack. Setelah memperoleh 4 Stack, Tigreal akan menggunakan Stack Fearless untuk memblokir Damage Basic Attack berikutnya (termasuk
+                serangan Turret).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper-kadita">
+        <video autoplay muted loop class="kadita-background">
+          <source src="asset/video/kadita-bg.mp4" />
+        </video>
+        <div class="box">
+          <img class="img-box" src="asset/img/kadita.jpg" alt="franco" />
+          <button class="buttonSound">
+            <img src="asset/img/mute.png" class="soundIcon" />
+            <audio id="kadita-sound " src="asset/sound/kadita.mp3"></audio>
+          </button>
+          <div class="caption">
+            <h1>Kadita</h1>
+            <p>
+              Skill 1, <b>Ocean Oddity</b>, membuatnya berubah menjadi gelombang dan memberikan damage pada musuh yang dilewati. Skill 2, <b>Breath of the Ocean</b>, adalah serangan area yang menyebabkan knock-up pada musuh di area target.
+              Ultimate-nya, <b>Rough Waves</b>, melepaskan gelombang tsunami yang menyebar ke arah sekeliling, memberikan damage besar, lalu kembali ke Kadita, dengan setiap gelombang memberikan damage tambahan dan memungkinkan mobilitas
+              tinggi.
+            </p>
+          </div>
+          <button class="popup-open" onclick="popupOpen('popup4')">
+            <p>Selengkapnya</p>
+          </button>
+        </div>
+        <div class="popup" id="popup4">
+          <button class="button-close" onclick="popupClose('popup4')">
+            <i class="ph ph-x-circle"></i>
+          </button>
+          <div class="img-popup-konten">
+            <img src="asset/img/kadita.jpg" alt="kadita-popup" />
+          </div>
+          <div class="header-popup">
+            <h1>Kadita</h1>
+            <img src="asset/img/mage.png" alt="logo mage" />
+          </div>
+          <div class="role">
+            <p>Mage</p>
+            <p>Burst Damage</p>
+          </div>
+          <div class="skill-img">
+            <img src="asset/img/pasif-kadita.png" alt="pasif kadita" class="pasif-kadita" />
+            <img src="asset/img/skill1-kadita.png" alt="skill 1 kadita" />
+            <img src="asset/img/skill2-kadita.png" alt="skill 2 kadita" />
+            <img src="asset/img/ultimate-kadita.png" alt="ultimate kadita" />
+          </div>
+          <div class="attribute">
+            <div class="header-attribute">
+              <p>Thalassophobia</p>
+            </div>
+            <div class="description-attribute">
+              <p>
+                Kadita memperoleh Blessing of the Ocean setiap 30 detik. Blessing of the Ocean akan aktif ketika dia menerima Damage dari Hero lawan dan berlangsung selama 4 detik, membuatnya dapat memulihkan 65% dari HP yang hilang selama
+                durasi tersebut.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper-franco">
+        <div class="box">
+          <img class="img-box" src="asset/img/franco.jpg" alt="franco" />
+          <button class="buttonSound">
+            <img class="soundIcon" src="asset/img/mute.png" />
+            <audio src="asset/sound/franco.mp3"></audio>
+          </button>
+          <div class="caption">
+            <h1>Franco</h1>
+            <p>
+              Skill 1, <b>Iron Hook</b>, memungkinkan Franco melemparkan kait ke arah target, menarik musuh yang terkena ke arahnya. Skill 2, <b>Fury Shock</b>, memberikan serangan area di sekelilingnya, memperlambat lawan. Ultimate-nya,
+              <b>Brutal Massacre</b>, adalah serangan yang menahan musuh dalam beberapa hit cepat, membuat musuh tidak bisa bergerak.
+            </p>
+          </div>
+          <button class="popup-open" onclick="popupOpen('popup5')">
+            <p>Selengkapnya</p>
+          </button>
+        </div>
+        <div class="popup" id="popup5">
+          <button class="button-close" onclick="popupClose('popup5')">
+            <i class="ph ph-x-circle"></i>
+          </button>
+          <div class="img-popup-konten">
+            <img src="asset/img/franco.jpg" alt="franco-popup" />
+          </div>
+          <div class="header-popup">
+            <h1>Franco</h1>
+            <img src="asset/img/logo-tank.png" alt="logo tank" />
+          </div>
+          <div class="role">
+            <p>Tank/Support</p>
+            <p>Crowd Control</p>
+          </div>
+          <div class="skill-img">
+            <img src="asset/img/pasif-franco.png" alt="pasif franco" class="pasif-franco" />
+            <img src="asset/img/skill1-franco.png" alt="skill 1 franco" />
+            <img src="asset/img/skill2-franco.png" alt="skill 2 franco" />
+            <img src="asset/img/ultimate-franco.png" alt="ultimate franco" />
+          </div>
+          <div class="attribute">
+            <div class="header-attribute">
+              <p>Wasteland Force</p>
+            </div>
+            <div class="description-attribute">
+              <p>Jika tidak menerima Damage selama 5 detik, Franco memperoleh 10% Movement Speed tambahan, memulihkan 1% Max HP setiap detik, dan mulai mengakumulasi Wasteland Force (hingga 10 Stack).</p>
+              <br />
+              <p>Franco akan menggunakan semua Stack Wasteland Force dalam penggunaan Skill berikutnya, meningkatkan Damage Skill hingga 150%.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper-natalia">
+      <div class="box">
+        <img class="img-box" src="asset/img/natalia.jpg" alt="franco" />
+        <button class="buttonSound">
+          <img class="soundIcon" src="asset/img/mute.png" />
+          <audio src="asset/sound/natalia.mp3"></audio>
+        </button>
+        <div class="caption">
+          <h1>Natalia</h1>
+          <p>
+            Skill 1, <b>Claw Dash</b> memungkinkannya menyerang dua kali jika mengenai target. Skill 2, <b>Smoke Bomb</b>  memperlambat musuh dan meningkatkan kecepatan serangannya. Ultimate-nya, <b>The Hunt</b>, memperkuat mode stealth dan meningkatkan damage.
+          </p>
+        </div>
+        <button class="popup-open" onclick="popupOpen('popup6')">
+          <p>Selengkapnya</p>
+        </button>
+      </div>
+      <div class="popup" id="popup6">
+        <button class="button-close" onclick="popupClose('popup6')">
+          <i class="ph ph-x-circle"></i>
+        </button>
+        <div class="img-popup-konten">
+          <img src="asset/img/natalia.jpg" alt="natalia-popup" />
+        </div>
+        <div class="header-popup">
+          <h1>Natalia</h1>
+          <img src="asset/img/logo-assasin.png" alt="logo assasin" />
+        </div>
+        <div class="role">
+          <p>Assasin</p>
+          <p>Burst Damage</p>
+        </div>
+        <div class="skill-img">
+          <img src="asset/img/pasif-natalia.png" alt="pasif franco" class="pasif-franco" />
+          <img src="asset/img/skill1-natalia.png" alt="skill 1 natalia" />
+          <img src="asset/img/skill2-natalia.png" alt="skill 2 natalia" />
+          <img src="asset/img/ultimate-natalia.png" alt="ultimate natalia" />
+        </div>
+        <div class="attribute">
+          <div class="header-attribute">
+            <p>Assasin Instinct</p>
+          </div>
+          <div class="description-attribute">
+            <p>Jika Natalia berdiam di dalam semak-semak tanpa menerima Damage selama 1 detik, dia akan memasuki Mode Camouflage dan memperoleh 15% Movement Speed. Di mode ini, Basic Attack berikutnya akan membuatnya berpindah ke belakang target dan memberikan 200 (+110% Total Physical Attack) Physical Damage serta menyebabkan Silence selama 0.25 detik.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
